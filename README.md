@@ -1,10 +1,6 @@
-Ishwarya Namburu, Karen Severson
+This is a repo for the paper An Empirical Study of AI-Assisted DJ-Style Transitions Between Music Excerpts by Karen Severson, Ishwarya Namburu, and Dr. Fahim Khan
 
-
-Professor Fahim Khan
-
-
-AI Powered Music Mixing Platform CS491 github
+Abstract: Many music listeners want playlists that blend tracks seamlessly, but common crossfade features provide limited control over what portions of each track are used and how transitions are formed. We explored an AI-assisted mixing pipeline that lets a user select short excerpts from two songs and attempts to generate DJ-like transitions between them. We evaluated audio similarity using embedding models (CLAP and MERT) and curated a small benchmarking dataset of song pairs labeled \emph{good}, \emph{okay}, and \emph{bad} to stress-test transition quality. We then experimented with Meta's MusicGen in audio-to-audio mode by splicing the tail of the first excerpt with the head of the second and prompting the model to produce a smooth blend. In our tests, MusicGen did not reliably generate seamless transitions and often introduced unrelated continuation. As a baseline, we implemented tempo-aware crossfading with librosa, which produced improved results for compatible song pairs. Future work will explore Magenta-based audio injection and representation blending approaches to combine generative models with reliable signal-processing transitions.
 
 crossFadeTransitions has the transitions created by beatMatchingTransition.py.
 
